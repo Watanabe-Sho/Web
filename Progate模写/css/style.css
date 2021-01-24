@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+header {
+    color: white;
+    width: 100%;
+    height: 80px;
+    opacity: .7;
+    background-color: black;
+}
+
+button {
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: .2;
+    outline: none;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+footer {
+    width: 100%;
+}
+
+.header-logo {
+    font-size: 26px;
+}
+
+.Header-container {
+    color: white;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
+
+.header-logo {
+    display: inline-block;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 50px;
+}
+
+.nav-menu a {
+    line-height: 80px;
+    color: white;
+    display: inline-block;
+    height: 100%;
+}
+
+.togglemenu {
+    font-size: 24px;
+    display: none;
+}
+
+.Top-wrapper {
+    color: white;
+    margin: 0 auto;
+    padding: 100px 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/imge01.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.Top-wrapper h1 {
+    opacity: .8;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.button-New {
+    background-color: #239b76;
+}
+
+.active {
+    display: block;
+}
+
+.button-Facebook {
+    margin-right: 20px;
+    background-color: #3b5998;
+}
+
+.button-Twitter {
+    background-color: #55acee;
+}
+
+.Lesson-wrapper {
+    width: 100%;
+    background-color: rgb(224, 220, 211);
+    padding-top: 50px;
+}
+
+.Lesson-wrapper h2 {
+    opacity: .6;
+}
+
+.Lesson {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Lesson-icon {
+    padding: 0 15px;
+}
+
+.icon {
+    position: relative;
+}
+
+.Lesson-name {
+    color: white;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.Message-wrapper {
+    padding: 100px 0px;
+}
+
+.Message-wrapper h2 {
+    opacity: .6;
+}
+
+.Message-wrapper h3 {
+    opacity: .6;
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    border-top: 1px solid rgb(218, 177, 15);
+    opacity: .5;
+}
+
+.footer-container img {
+    width: 150px;
+}
+
+.footer-container p {
+    margin: -10px;
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: 80px;
+        position: fixed;
+        z-index: 999;
+    }
+    .header-logo {
+        font-size: 24px;
+        line-height: 80px;
+        top: -5px;
+    }
+    .header-nav {
+        z-index: 999;
+        cursor: pointer;
+        position: fixed;
+        top: 0%;
+        right: -170px;
+        background: #0a2ae2;
+        width: 210px;
+        height: 80px;
+        color: #fff;
+        font-size: 16px;
+        /*display: none;*/
+    }
+    .nav-slide {
+        font-size: 12px;
+        right: 0px;
+        width: 30%;
+        height: 100px;
+    }
+    .nav-menu {
+        text-align: center;
+        display: block;
+    }
+    .nav-menu li {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+    .nav-menu a {
+        line-height: 50%;
+        height: 0;
+        padding: 15px 0;
+        width: 50%;
+    }
+    .Top-wrapper {
+        padding: 100px 0 100px 0;
+    }
+    .Top-wrapper h1 {
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+    .Top-wrapper p {
+        font-size: 12px;
+    }
+    .Lesson-wrapper {
+        padding: 20px 0;
+    }
+    .Lesson-wrapper h2 {
+        font-size: 20px;
+    }
+    .Lesson {
+        flex-wrap: wrap;
+    }
+    .Lesson p {
+        font-size: 14px;
+    }
+    button {
+        margin-top: 20px;
+        font-size: 12px;
+        width: 100%;
+    }
+    .button-New {
+        margin-top: 20px;
+    }
+    .button-wrapper p {
+        display: none;
+    }
+    .Message-wrapper h2 {
+        font-size: 18px;
+    }
+    .Message-wrapper h3 {
+        font-size: 14px;
+    }
+    .footer-container {
+        text-align: center;
+    }
+}
